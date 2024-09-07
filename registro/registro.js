@@ -23,9 +23,18 @@ document.getElementById('registroForm').addEventListener('submit', function (e) 
             password: password
         })
     })
-        .then(response => response.text())
-        .then(data => {
-            alert(data);  // Mostrar un mensaje de éxito o error
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Error en el registro');
+            }
+            return response.text();
         })
-        .catch(error => console.error('Error:', error));
+        .then(data => {
+            alert(data);  // Mostrar mensaje de éxito
+            window.location.href = 'index.html';  // Redirigir a la página de inicio de sesión
+        })
+        .catch(error => {
+            alert(error.message);
+            console.error('Error:', error);
+        });
 });
