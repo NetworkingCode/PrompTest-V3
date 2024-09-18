@@ -28,7 +28,7 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
     .then(data => {
         alert(data.message);  // Mostrar mensaje de éxito
         // Redirigir al usuario a la página principal
-        window.location.href = 'main.html';
+        window.location.href = './main/main.html';
     })
     .catch(error => {
         alert(error.message);
