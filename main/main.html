@@ -7,33 +7,39 @@
     <link rel="stylesheet" href="/CSS/style_main.css">
 
     <title>PROMPTEST</title>
-   
+
 </head>
 
 <body>
 
-<div id="content">
     
-    <label for="titulo">TITULO DEL PROMPT: </label><br>
-    <input id="titulo" type="text" placeholder="Dale un titulo a tu idea...🤖"><br><br>
 
-    <label for="comentario">ESCRIBE TU PROMPT:</label><br>
-    <textarea rows="10" cols="60" id="comentario" name="comentario" placeholder="Escribe tu idea aqui 🦾"></textarea><br>
+    <div id="content">
 
-    <button onclick="grabarPrompt()">GRABAR</button>
-    <button onclick="limpiarCampos()">LIMPIAR</button><br><br>
+        <label for="titulo">TITULO DEL PROMPT: </label><br>
+        <input id="titulo" type="text" placeholder="Dale un titulo a tu idea...🤖"><br><br>
 
-    <br>
-    <hr>
+        <label for="comentario">ESCRIBE TU PROMPT:</label><br>
+        <textarea rows="10" cols="60" id="comentario" name="comentario"
+            placeholder="Escribe tu idea aqui 🦾"></textarea><br>
 
-    <div id="listaPrompts"></div>
+        <button onclick="grabarPrompt()">GRABAR</button>
+        <button onclick="limpiarCampos()">LIMPIAR</button><br><br>
 
-</div>
+        <br>
+        <hr>
+
+        <div id="listaPrompts"></div>
+
+    </div>
 
 
 
-<!-- Añade esto al final del body, después de los otros scripts -->
-<script type="module" src="showPrompts.js"></script>
+    <!-- Añade esto al final del body, después de los otros scripts -->
+    <script src="grabarPrompt.js"></script>
+    <script type="module" src="showPrompts.js"></script>
+    <script src="limpiarCampos.js"></script>
 
 </body>
+
 </html>

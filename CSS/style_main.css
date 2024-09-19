@@ -25,6 +25,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar el contenido */
 }
 
+#listaPrompts div {
+    word-wrap: break-word; /* Rompe palabras largas */
+    word-break: break-all; /* Opción adicional para romper palabras muy largas */
+    max-width: 100%; /* Asegura que no se extienda más allá del ancho permitido */
+}
+
+
 /* 
 Esta regla establece que los elementos <input> y <textarea>
 tendrán un ancho del 100% de su contenedor y un margen inferior de 10 píxeles.
@@ -48,16 +55,6 @@ button {
 
 }
 
-
-/* Aplica un margen inferior de 20 píxeles a todos los elementos con la clase "prompt-entry" */
-.prompt-entry {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff; /* Fondo blanco para destacar cada entrada */
-    position: relative;
-}
 
 .copy-button {
     position: absolute;
