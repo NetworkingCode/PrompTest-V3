@@ -2,9 +2,18 @@ function grabarPrompt() {
     const titulo = document.getElementById('titulo').value;
     const comentario = document.getElementById('comentario').value;
 
-    const usuario_id = 1; // Ajusta esto para obtener el ID real del usuario
+    // Obtener el usuario_id desde el localStorage
+    const usuario_id = localStorage.getItem('usuario_id');
+
+    // Verificar que el usuario_id está presente
+    if (!usuario_id) {
+        console.error("No se encontró el usuario_id en el localStorage");
+        return;
+    }
 
     const data = { usuario_id, titulo, contenido: comentario };
+
+
 
     fetch('http://localhost:3000/grabar-prompt', {
         method: 'POST',

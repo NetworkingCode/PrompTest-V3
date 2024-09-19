@@ -4,9 +4,9 @@ function getUsuarioId() {
 }
 
 // Función para cargar los prompts del usuario
-function cargarPrompts(usuario_id) {
+function cargarPrompts() {
     const usuario_id = getUsuarioId(); // Obtener el ID del usuario
-    
+
     fetch(`http://localhost:3000/obtener-prompts/${usuario_id}`)
         .then(response => response.json())
         .then(prompts => {
@@ -31,7 +31,6 @@ function cargarPrompts(usuario_id) {
         });
 }
 
-
 // Función para copiar el texto del prompt al portapapeles
 function copiarAlPortapapeles(promptId) {
     const promptTexto = document.getElementById(promptId).innerText;
@@ -46,9 +45,7 @@ function copiarAlPortapapeles(promptId) {
         });
 }
 
-
-
 // Cargar los prompts al cargar la página
-window.onload = () => {    
-    cargarPrompts();
+window.onload = () => {
+    cargarPrompts(); // No es necesario pasar usuario_id como parámetro porque ya lo obtenemos dentro de la función
 };

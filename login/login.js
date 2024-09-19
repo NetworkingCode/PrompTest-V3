@@ -28,9 +28,12 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
     .then(data => {
         alert(data.message);  // Mostrar mensaje de éxito
 
+        // Verificar si el usuario_id llega correctamente
+        console.log("usuario_id recibido:", data.usuario_id);
+
         // Guardar el usuario_id en el localStorage
         localStorage.setItem('usuario_id', data.usuario_id);
-        
+
         // Redirigir al usuario a la página principal
         window.location.href = './main/main.html';
     })
