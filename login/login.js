@@ -27,6 +27,10 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
     })
     .then(data => {
         alert(data.message);  // Mostrar mensaje de éxito
+
+        // Guardar el usuario_id en el localStorage
+        localStorage.setItem('usuario_id', data.usuario_id);
+        
         // Redirigir al usuario a la página principal
         window.location.href = './main/main.html';
     })
