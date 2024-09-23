@@ -14,7 +14,6 @@ function grabarPrompt() {
     const data = { usuario_id, titulo, contenido: comentario };
 
 
-
     fetch('http://localhost:3000/grabar-prompt', {
         method: 'POST',
         headers: {

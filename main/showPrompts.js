@@ -1,3 +1,5 @@
+import { deletePrompt } from './deletePrompt.js';
+
 // Función para obtener el usuario ID desde el localStorage
 function getUsuarioId() {
     return localStorage.getItem('usuario_id');
@@ -21,9 +23,14 @@ function cargarPrompts() {
                     <h3>${prompt.titulo}</h3>
                     <p id="prompt-${prompt.id}">${prompt.contenido}</p>
                     <button onclick="copiarAlPortapapeles('prompt-${prompt.id}')">Copiar</button>
-                    <button onclick="eliminarPrompt(${prompt.id})">Eliminar</button>
+                    <button class="eliminar-btn">Eliminar</button>
                     <hr>
                     `;
+                  
+
+                // Añadir el evento de clic para "Eliminar"
+                const eliminarBtn = promptDiv.querySelector('.eliminar-btn');
+                eliminarBtn.onclick = () => deletePrompt(prompt.id);
                 listaPrompts.appendChild(promptDiv);
             });
         })
@@ -46,30 +53,7 @@ function copiarAlPortapapeles(promptId) {
         });
 }
 
-// Nueva función para eliminar un prompt
-function eliminarPrompt(promptId) {
-    const usuario_id = getUsuarioId();
 
-    fetch(`http://localhost:3000/eliminar-prompt/${usuario_id}/${promptId}`, {
-        method: 'DELETE',
-    })
-    .then(response => {
-        if (response.ok) {
-            // Eliminar el prompt del DOM
-            const promptContainer = document.getElementById(`prompt-container-${promptId}`);
-            if (promptContainer) {
-                promptContainer.remove();
-            }
-            alert('Prompt eliminado con éxito');
-        } else {
-            alert('Error al eliminar el prompt');
-        }
-    })
-    .catch(error => {
-        console.error('Error al eliminar el prompt:', error);
-        alert('Error de conexión');
-    });
-}
 
 // Cargar los prompts al cargar la página
 window.onload = () => {
