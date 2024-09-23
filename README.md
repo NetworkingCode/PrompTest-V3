@@ -13,7 +13,8 @@ git clone https://github.com/NetworkingCode/PrompTest-V3.git
 Instala las dependencias del proyecto:
 npm install
 
-Configura la base de datos MySQL:
+Configura la base de datos MySQL: 
+Puedes usar el archivo DataExample.sql para crear la BD, viene con datos de ejemplo.
 Ejecuta el script SQL para crear la base de datos:
 mysql -u [usuario] -p [nombre_bd] < script.sql
 
