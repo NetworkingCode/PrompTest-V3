@@ -18,7 +18,7 @@ function cargarPrompts() {
             prompts.forEach(prompt => {
                 const promptDiv = document.createElement('div');
 
-                // Crear el HTML del prompt con el botón "Copiar"
+                // Crear el HTML del prompt con el botón "Copiar" y "Eliminar"
                 promptDiv.innerHTML = `
                     <h3>${prompt.titulo}</h3>
                     <p id="prompt-${prompt.id}">${prompt.contenido}</p>
@@ -36,20 +36,6 @@ function cargarPrompts() {
         })
         .catch(error => {
             console.error('Error al cargar los prompts:', error);
-        });
-}
-
-// Función para copiar el texto del prompt al portapapeles
-function copiarAlPortapapeles(promptId) {
-    const promptTexto = document.getElementById(promptId).innerText;
-
-    // Usar la API de portapapeles para copiar el texto
-    navigator.clipboard.writeText(promptTexto)
-        .then(() => {
-            alert('Prompt copiado al portapapeles');
-        })
-        .catch(err => {
-            console.error('Error al copiar al portapapeles: ', err);
         });
 }
 
