@@ -31,7 +31,7 @@ document.getElementById('registroForm').addEventListener('submit', function (e) 
         })
         .then(data => {
             alert(data);  // Mostrar mensaje de éxito
-            window.location.href = 'index.html';  // Redirigir a la página de inicio de sesión
+            window.location.href = '/index.html';  // Redirigir a la página de inicio de sesión
         })
         .catch(error => {
             alert(error.message);
