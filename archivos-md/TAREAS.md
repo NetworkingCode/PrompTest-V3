@@ -13,6 +13,8 @@
 - [ ] Mejorar el manejo de errores al eliminar prompts inexistentes.
 
 ### Mejoras futuras
+
+- [ ] Al momento de iniciar session que NO muestre mensaje con popup
 - [ ] Agregar soporte para múltiples idiomas en la interfaz.
 - [ ] Implementar un sistema de búsqueda y filtrado de prompts.
 - [ ] Crear una API pública para que otros servicios puedan interactuar con los prompts.
