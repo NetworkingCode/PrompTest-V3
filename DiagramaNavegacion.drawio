@@ -4,6 +4,45 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="26IFQ--h5W8aGGFK5v4V-1" target="26IFQ--h5W8aGGFK5v4V-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-1" value="INDEX" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.html5;fontSize=20;fillColor=none;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="29" y="10" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="26IFQ--h5W8aGGFK5v4V-2" target="26IFQ--h5W8aGGFK5v4V-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-2" value="LOGIN" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/file-extension-names-vol-8/512/27-128.png;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="270" y="27.5" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="26IFQ--h5W8aGGFK5v4V-3" target="26IFQ--h5W8aGGFK5v4V-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-3" value="STYLE_INDEX" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/hawcons/32/700035-icon-77-document-file-css-128.png;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="51.19999999999999" y="174.4" width="45.6" height="45.6" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="26IFQ--h5W8aGGFK5v4V-7" target="26IFQ--h5W8aGGFK5v4V-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="26IFQ--h5W8aGGFK5v4V-7" target="26IFQ--h5W8aGGFK5v4V-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-7" value="BIENVENIDA" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.html5;fontSize=20;fillColor=none;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="450" y="10" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="26IFQ--h5W8aGGFK5v4V-9" target="26IFQ--h5W8aGGFK5v4V-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-9" value="BIENVE" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/file-extension-names-vol-8/512/27-128.png;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="720" y="27.5" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-11" value="BIENVE" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/hawcons/32/700035-icon-77-document-file-css-128.png;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="472.2" y="174.4" width="45.6" height="45.6" as="geometry" />
+        </mxCell>
+        <mxCell id="26IFQ--h5W8aGGFK5v4V-15" value="MAIN" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.html5;fontSize=20;fillColor=none;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="710" y="270" width="90" height="90" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
